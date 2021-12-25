@@ -2,6 +2,8 @@ package com.free.tools.utils;
 
 import com.free.tools.algorithm.id.SnowflakeIdWorker;
 
+import java.util.UUID;
+
 /**
  * Id生成工具类
  *
@@ -18,6 +20,7 @@ public class IdUtil {
 
     /**
      * 获取雪花id
+     *
      * @param workerId
      * @param datacenterId
      * @return
@@ -29,6 +32,7 @@ public class IdUtil {
 
     /**
      * 获取32位uuid，不包含'-'
+     *
      * @return
      */
     public static String get32UUId() {
@@ -37,6 +41,7 @@ public class IdUtil {
 
     /**
      * 获取36位uuid 包含 '-'
+     *
      * @return
      */
     public static String get36UUId() {
