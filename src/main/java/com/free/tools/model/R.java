@@ -1,6 +1,4 @@
-package com.free.tools.utils;
-
-import com.free.tools.model.CodeEnum;
+package com.free.tools.model;
 
 import java.io.Serializable;
 

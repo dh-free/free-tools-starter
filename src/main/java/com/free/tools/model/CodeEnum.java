@@ -17,8 +17,8 @@ public enum CodeEnum {
      **/
     ERROR(500, "");
 
-    private Integer code;
-    private String msg;
+    private final Integer code;
+    private final String msg;
 
     CodeEnum(Integer code, String msg) {
         this.code = code;

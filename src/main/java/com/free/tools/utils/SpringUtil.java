@@ -1,4 +1,4 @@
 package com.free.tools.utils;
 
-public class StrUtils {
+public class SpringUtil {
 }

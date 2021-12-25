@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.dh-free</groupId>
     <artifactId>free-tools-starter</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>free-tools-starter</name>
     <description>free-tools</description>
     <url>https://github.com/dh-free/free-tools-starter</url>
@@ -63,6 +63,23 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.15</version>
+        </dependency>
+        <!-- 中文拼音 -->
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+        <!-- 二维码 -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.3.2</version>
         </dependency>
     </dependencies>
 
@@ -158,6 +175,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.4.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
